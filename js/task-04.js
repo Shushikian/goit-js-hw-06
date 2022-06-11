@@ -7,6 +7,6 @@ decrement.addEventListener('click', () => {
     numberValue.textContent = counterValue;
 });
 increment.addEventListener('click', () => {
-    value += 1;
+    counterValue += 1;
     numberValue.textContent = counterValue;
 });
