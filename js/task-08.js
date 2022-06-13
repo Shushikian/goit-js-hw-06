@@ -15,19 +15,19 @@ function handleSubmit(event) {
   const formEl = event.currentTarget.elements;
   const email = formEl.email.value;
   const password = formEl.password.value
-  console.log(email)
-  console.log(password)
   if (email === "" || password === "") {
     return alert('Please fill every field to continued!');
-  }
+  } else {
     user.email = email;
     user.password = password;
-  event.currentTarget.reset();
-  return user;
+    console.log(user);
+    event.currentTarget.reset();
+    return user;
+  }
   // console.dir(event.currentTarget.elements);
   //   console.log(event.currentTarget.elements.email.value);
 }
-console.log(user);
+
 
 
 
